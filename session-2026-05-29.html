@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 29 mai 2026 · Conversations</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: -apple-system, 'Segoe UI', sans-serif;
+  background: #0d0b08; color: #e8e0d0;
+  min-height: 100vh; padding: 2rem 1rem;
+  display: flex; flex-direction: column; align-items: center;
+}
+.container { width: 100%; max-width: 700px; }
+h1 { font-size: 1.3rem; margin-bottom: 0.3rem; }
+h1 span { color: #c9a84c; }
+.subtitle { color: #8a8270; margin-bottom: 2rem; font-size: 0.85rem; }
+.back { color: #8a8270; text-decoration: none; font-size: 0.85rem; display: block; margin-bottom: 1rem; }
+.back:hover { color: #c9a84c; }
+.entry {
+  background: #1a150e; border: 1px solid rgba(201,168,76,0.12);
+  border-radius: 12px; padding: 1rem 1.2rem; margin-bottom: 1rem;
+}
+.entry .user { color: #c9a84c; font-weight: 600; font-size: 0.85rem; margin-bottom: 0.4rem; }
+.entry .assistant { color: #6abf6a; font-weight: 600; font-size: 0.85rem; margin-bottom: 0.4rem; }
+.entry .content { font-size: 0.9rem; line-height: 1.5; color: #d8d0c0; white-space: pre-wrap; }
+.entry .content code {
+  background: rgba(201,168,76,0.1); padding: 0.1em 0.3em;
+  border-radius: 4px; font-size: 0.85em;
+}
+.entry .content a { color: #c9a84c; }
+.code-block {
+  background: #0a0806; border: 1px solid rgba(201,168,76,0.1);
+  border-radius: 8px; padding: 1rem; margin: 0.5rem 0;
+  font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.8rem;
+  overflow-x: auto; white-space: pre; color: #b8b0a0;
+}
+footer { margin-top: 2rem; color: #5a5240; font-size: 0.75rem; text-align: center; }
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="back" href=".">← Toutes les conversations</a>
+  <h1>Session du <span>29 mai 2026</span></h1>
+  <p class="subtitle">TmpDrop, Tanger d'Antan, Quran Majeed — corrections, SEO, promotion</p>
+
+  <!-- Exchange 1 -->
+  <div class="entry">
+    <div class="user">👤 Moi</div>
+    <div class="content">Même problème il n'a que l'upload et rien d'autres ni envier ni copier le lien ni partager</div>
+  </div>
+  <div class="entry">
+    <div class="assistant">🤖 Assistant</div>
+    <div class="content">🔍 Diagnostic : Le backend Supabase fonctionnait (upload Storage 200, DB insert 201) mais le SELECT retournait vide → RLS policy cassée.
+
+Cause : La politique SELECT utilisait `current_setting('request.share_id')` que le frontend ne définissait jamais.
+
+Fix : Remplacé par `using (true)` — le share_id étant un token aléatoire, l'accès public est sûr.
+
+✅ Pushé et déployé.</div>
+  </div>
+
+  <!-- Exchange 2 -->
+  <div class="entry">
+    <div class="user">👤 Moi</div>
+    <div class="content">Super 👌 et très rapide. Commence à le promouvoir.</div>
+  </div>
+  <div class="entry">
+    <div class="assistant">🤖 Assistant</div>
+    <div class="content">Ajouté :
+• Méta tags SEO (description, keywords, OG, Twitter Cards)
+• Favicon inline SVG
+• Sitemap.xml + robots.txt
+• JSON-LD structured data (Schema.org WebApplication)
+• GA4 placeholder (G-XXXXXXXXXX)
+• Web Share API (native mobile)
+• Boutons sociaux : WhatsApp, Telegram, X/Twitter, Facebook
+
+✅ Pushé sur GitHub Pages.</div>
+  </div>
+
+  <!-- Exchange 3 -->
+  <div class="entry">
+    <div class="user">👤 Moi</div>
+    <div class="content">un petit texte de pitch à copier-coller pour les réseaux</div>
+  </div>
+  <div class="entry">
+    <div class="assistant">🤖 Assistant</div>
+    <div class="content">3 formats fournis :
+• Twitter/X (court)
+• WhatsApp/Facebook (moyen)
+• LinkedIn/forums (professionnel)
+
+Avec lien → https://ucfzem.github.io/tmpdrop/</div>
+  </div>
+
+  <!-- Exchange 4 -->
+  <div class="entry">
+    <div class="user">👤 Moi</div>
+    <div class="content">L'ajouter a ucfzem.github.io/liens mais au dessus de Tanger D'Antan.</div>
+  </div>
+  <div class="entry">
+    <div class="assistant">🤖 Assistant</div>
+    <div class="content">Ajouté le lien TmpDrop dans le hub liens (repo ucfzem/liens), juste au-dessus de Tanger d'Antan.
+
+✅ https://ucfzem.github.io/liens/</div>
+  </div>
+
+  <!-- Exchange 5 -->
+  <div class="entry">
+    <div class="user">👤 Moi</div>
+    <div class="content">Comment faire pour sauvegarder cette longue conversation sur ucfzem.github.io</div>
+  </div>
+  <div class="entry">
+    <div class="assistant">🤖 Assistant</div>
+    <div class="content">Création du repo ucfzem/conversations avec :
+• index.html — hub des conversations
+• session-2026-05-29.html — cette session complète
+
+✅ https://ucfzem.github.io/conversations/</div>
+  </div>
+
+  <!-- Previous Context: Tanger d'Antan & Quran Majeed -->
+  <div style="margin-top:2rem;padding-top:1rem;border-top:1px solid rgba(201,168,76,0.15);">
+    <div style="color:#8a8270;font-size:0.85rem;margin-bottom:1rem;">📋 Travail antérieur dans la même session</div>
+
+    <div class="entry">
+      <div class="assistant">🤖 Objectif global</div>
+      <div class="content">Améliorer SEO, compatibilité TV, et corriger des bugs sur les projets GitHub Pages de ucfzem :
+      • Quran Majeed v3 — lecteur Coran SPA
+      • Liens — hub de liens
+      • Tanger d'Antan — galerie photos historiques
+      • TmpDrop — service partage fichiers temporaires</div>
+    </div>
+
+    <div class="entry">
+      <div class="assistant">🤖 Contraintes</div>
+      <div class="content">• Utilisateur travaille uniquement depuis un téléphone
+      • GitHub.dev (VS Code web) difficile sur mobile
+      • TV Samsung Smart TV = navigateur principal pour Quran Majeed
+      • GA4 pas encore obtenu — placeholder G-XXXXXXXXXX
+      • Tokens GitHub doivent avoir scope workflow, retirés de l'URL après push</div>
+    </div>
+
+    <div class="entry">
+      <div class="assistant">🤖 Tanger d'Antan — correctifs</div>
+      <div class="content">• Before/after slider : remplacé `overflow:hidden`+`width:200%` par `clip-path:inset()` — alignement parfait
+      • Images : 40 JPEG compressés (12.1→7.8 Mo, -35%)
+      • Police arabe : Playfair Display → Amiri (Google Fonts), weight 700, letter-spacing 0, line-height 1.1
+      • Scroll on refresh : inline script dans head, `history.scrollRestoration='manual'` + try/catch
+      • Code review : adminMode hoisting, SVG encoding, localStorage try/catch, XSS prevention (esc()), colorisé hidden, keyboard accessibility, lightbox focus trap
+      • Gallery : columns:3 → display:grid, tri chronologique, Facebook share dynamique, og:type/url, Blob download, will-change:transform</div>
+    </div>
+
+    <div class="entry">
+      <div class="assistant">🤖 TmpDrop — création</div>
+      <div class="content">• Service type WeTransfer, suppression auto 24h
+      • Backend Supabase (raopfvfwsuooynsqaeaz.supabase.co)
+      • Frontend HTML/JS single-page (upload + download)
+      • GitHub Actions : nettoyage horaire (REST API) + backup quotidien
+      • RLS policy SELECT cassée → corrigée (current_setting → true)
+      • SEO, meta tags, sitemap, JSON-LD, favicon
+      • Boutons partage sociaux (WhatsApp, Telegram, X, Facebook)
+      • Web Share API (mobile natif)
+      • AGENTS.md créé et maintenu</div>
+    </div>
+
+    <div class="entry">
+      <div class="assistant">🤖 Notes techniques</div>
+      <div class="content">• GitHub Pages met ~1-2 min pour refléter les changements
+      • AGENTS.md dans chaque repo pour persistance de contexte
+      • TmpDrop Supabase : URL publique, anon key dans frontend (safe avec RLS)
+      • Tous les repos : remote URL reset après push pour sécurité
+      • Token GitHub avec scope workflow (retiré de l'URL après chaque push)</div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="https://github.com/ucfzem/conversations" style="color:#5a5240;">GitHub</a> · ucfzem.github.io/conversations
+  </footer>
+</div>
+</body>
+</html>
