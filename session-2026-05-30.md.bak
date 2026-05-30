@@ -1,0 +1,24 @@
+# Session du 30 mai 2026
+
+**Interventions :**
+
+1. **Force push réparé** — Restauration de `/projets/`, redirect, robots.txt, sitemap, sw.js après un force push
+2. **Nass El Ghiwane Parolier** — conservé dans le même repo
+3. **Rafeeq app** — Création complète :
+   - Interface santé avec grille de services
+   - SPA interactive (navigation, pages détail, SOS modal)
+   - Gestion des médicaments avec localStorage
+   - 7 langues (🇲🇦🇫🇷🇬🇧🇪🇸🇩🇪🇳🇱🇮🇹)
+   - Design doré
+4. **Projets mis à jour** — Lien Rafeeq pointe vers la nouvelle app locale
+5. **SEO** — Sitemap complété, JSON-LD nettoyé, hreflang ajouté
+6. **Quran Majeed** — Bug `#hash` → `?surah=N` pour l'indexation Google
+7. **Cloudflare Pages** — Préparation pour migration (guide prêt)
+8. **Backup** — Sauvegarde locale dans /tmp/opencode/backups/
+
+**URLs actuelles :**
+- https://ucfzem.github.io/ → redirige vers /projets/
+- https://ucfzem.github.io/projets/
+- https://ucfzem.github.io/rafeeq/
+- https://ucfzem.github.io/promptgenius/
+- https://ucfzem.github.io/quran-majeed-v3/
